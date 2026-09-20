@@ -49,17 +49,6 @@ Shared state lives in `ConcurrentHashMap`, because RMI serves each incoming call
 on its own thread. Accounts persist through Java serialisation, written to a
 temporary file and then renamed, so a crash mid-write cannot corrupt the store.
 
-## A bug worth documenting
-
-Services would work for a few minutes, then fail with a stale-stub error.
-
-The cause: nothing held a strong reference to the exported service objects, so
-the JVM garbage-collected them while the RMI registry still handed out their
-stubs. Fixed by keeping static references in `ServerMain`.
-
-Silent, intermittent, and invisible in the stack trace until you know where to
-look for it.
-
 ## Running it
 
 Requires Java 17 or later.
