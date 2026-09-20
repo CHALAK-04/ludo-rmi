@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Ludo.CLIENT.LobbyForm">
+  <grid id="27dc6" binding="LobbyPanel" custom-create="true" layout-manager="GridBagLayout">
+    <constraints>
+      <xy x="20" y="20" width="2269" height="3745"/>
+    </constraints>
+    <properties>
+      <alignmentY value="0.5"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <hspacer id="1d2c7">
+        <constraints>
+          <grid row="0" column="8" row-span="7" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+      </hspacer>
+      <grid id="b542c" binding="StatsAndReplayPanel" custom-create="true" layout-manager="GridBagLayout">
+        <constraints>
+          <grid row="0" column="0" row-span="6" col-span="6" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag top="85" left="40" bottom="0" right="0" weightx="1.0" weighty="1.0"/>
+        </constraints>
+        <properties>
+          <maximumSize width="300" height="700"/>
+          <minimumSize width="300" height="700"/>
+          <opaque value="false"/>
+          <preferredSize width="300" height="700"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="d5fe6" class="javax.swing.JLabel" binding="lblStats">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.1"/>
+            </constraints>
+            <properties>
+              <font name="Agency FB" size="72" style="1"/>
+              <text value="STATS"/>
+              <verticalAlignment value="0"/>
+              <verticalTextPosition value="0"/>
+            </properties>
+          </component>
+          <grid id="916b" binding="StatsHolderPanel" layout-manager="FlowLayout" hgap="500" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+              <gridbag top="0" left="5" bottom="0" right="0" weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <opaque value="false"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="a8851" class="javax.swing.JLabel" binding="lblWinRate">
+                <constraints/>
+                <properties>
+                  <alignmentX value="1.0"/>
+                  <alignmentY value="0.2"/>
+                  <font name="Agency FB" size="28" style="1"/>
+                  <horizontalAlignment value="2"/>
+                  <horizontalTextPosition value="2"/>
+                  <preferredSize width="200" height="40"/>
+                  <text value=""/>
+                  <verifyInputWhenFocusTarget value="true"/>
+                </properties>
+              </component>
+              <component id="fa7b9" class="javax.swing.JLabel" binding="lblWins">
+                <constraints/>
+                <properties>
+                  <alignmentX value="1.0"/>
+                  <alignmentY value="0.2"/>
+                  <font name="Agency FB" size="28" style="1"/>
+                  <horizontalAlignment value="2"/>
+                  <horizontalTextPosition value="2"/>
+                  <preferredSize width="200" height="40"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="5fcdd" class="javax.swing.JLabel" binding="lblLosses">
+                <constraints/>
+                <properties>
+                  <alignmentX value="1.0"/>
+                  <alignmentY value="0.2"/>
+                  <font name="Agency FB" size="28" style="1"/>
+                  <horizontalAlignment value="2"/>
+                  <horizontalTextPosition value="2"/>
+                  <preferredSize width="200" height="40"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="be4c1" binding="FriendPanel" custom-create="true" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <grid row="0" column="7" row-span="5" col-span="1" vsize-policy="3" hsize-policy="3" anchor="5" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag top="30" left="0" bottom="0" right="40" weightx="1.0" weighty="1.0"/>
+        </constraints>
+        <properties>
+          <maximumSize width="350" height="600"/>
+          <minimumSize width="350" height="600"/>
+          <opaque value="false"/>
+          <preferredSize width="350" height="600"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="adfff" class="javax.swing.JLabel" binding="lblFriendList">
+            <constraints border-constraint="North"/>
+            <properties>
+              <font name="Agency FB" size="48" style="1"/>
+              <horizontalAlignment value="0"/>
+              <text value="FRIEND LIST"/>
+              <verticalAlignment value="0"/>
+              <verticalTextPosition value="0"/>
+            </properties>
+          </component>
+          <grid id="a8d08" binding="AddFriendPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints border-constraint="South"/>
+            <properties>
+              <maximumSize width="350" height="2147483647"/>
+              <minimumSize width="350" height="201"/>
+              <opaque value="false"/>
+              <preferredSize width="350" height="207"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="b1f0" class="javax.swing.JLabel" binding="lblAddFreind">
+                <constraints/>
+                <properties>
+                  <font name="Agency FB" size="48" style="1"/>
+                  <text value="ADD FRIEND"/>
+                  <verticalAlignment value="0"/>
+                  <verticalTextPosition value="0"/>
+                </properties>
+              </component>
+              <component id="59f9e" class="javax.swing.JTextField" binding="txtAddFriend">
+                <constraints/>
+                <properties>
+                  <font name="Agency FB" size="26" style="0"/>
+                  <horizontalAlignment value="0"/>
+                  <margin top="2" left="9" bottom="2" right="6"/>
+                  <maximumSize width="200" height="45"/>
+                  <minimumSize width="300" height="45"/>
+                  <preferredSize width="220" height="45"/>
+                </properties>
+              </component>
+              <component id="608fa" class="javax.swing.JButton" binding="btnAddFriend">
+                <constraints/>
+                <properties>
+                  <background color="-15224065"/>
+                  <borderPainted value="true"/>
+                  <font name="Agency FB" size="28" style="1"/>
+                  <foreground color="-16701735"/>
+                  <opaque value="true"/>
+                  <preferredSize width="70" height="45"/>
+                  <text value="ADD"/>
+                </properties>
+              </component>
+              <component id="1d074" class="javax.swing.JLabel" binding="lblAddFriendStatus">
+                <constraints/>
+                <properties>
+                  <alignmentY value="1.0"/>
+                  <autoscrolls value="false"/>
+                  <font name="Agency FB" size="28" style="1"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <preferredSize width="292" height="60"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="d7a15" binding="NotificationHostPanel" custom-create="true" layout-manager="CardLayout" hgap="0" vgap="0">
+        <constraints>
+          <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag top="40" left="0" bottom="0" right="0" weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <maximumSize width="650" height="100"/>
+          <minimumSize width="650" height="100"/>
+          <opaque value="false"/>
+          <preferredSize width="650" height="100"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="7a3fc" binding="LobbyChatPanel" custom-create="true" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <grid row="4" column="6" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="2" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag top="150" left="0" bottom="0" right="0" weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <maximumSize width="600" height="350"/>
+          <minimumSize width="600" height="350"/>
+          <opaque value="false"/>
+          <preferredSize width="600" height="350"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="6fb26" class="javax.swing.JLabel" binding="txtLobbyChat">
+            <constraints border-constraint="North"/>
+            <properties>
+              <alignmentX value="0.0"/>
+              <font name="Agency FB" size="48" style="1"/>
+              <horizontalAlignment value="2"/>
+              <preferredSize width="277" height="70"/>
+              <text value="   LOBBY CHAT"/>
+              <verticalAlignment value="0"/>
+              <verticalTextPosition value="0"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="81fc1" binding="CurrentLobbyPanel" custom-create="true" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <grid row="3" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="2" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag top="200" left="0" bottom="0" right="0" weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <maximumSize width="600" height="350"/>
+          <minimumSize width="600" height="350"/>
+          <opaque value="false"/>
+          <preferredSize width="600" height="350"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="2697e" class="javax.swing.JLabel" binding="txtCurrentLobby">
+            <constraints border-constraint="North"/>
+            <properties>
+              <alignmentX value="0.0"/>
+              <font name="Agency FB" size="48" style="1"/>
+              <horizontalAlignment value="2"/>
+              <preferredSize width="277" height="70"/>
+              <text value="   CURRENT LOBBY"/>
+              <verticalAlignment value="0"/>
+              <verticalTextPosition value="0"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="b5472" binding="gameOptionsContainer" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="5" column="7" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="6" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag top="0" left="0" bottom="40" right="40" weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <maximumSize width="350" height="400"/>
+          <minimumSize width="350" height="400"/>
+          <opaque value="false"/>
+          <preferredSize width="350" height="400"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <component id="82a63" class="javax.swing.JButton" binding="btnLogout">
+        <constraints>
+          <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag top="40" left="40" bottom="0" right="0" weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <actionCommand value="EXIT"/>
+          <background color="-65495"/>
+          <borderPainted value="true"/>
+          <focusable value="false"/>
+          <font name="Agency FB" size="28" style="1"/>
+          <foreground color="-1179652"/>
+          <hideActionText value="false"/>
+          <horizontalAlignment value="0"/>
+          <margin top="0" left="0" bottom="0" right="0"/>
+          <maximumSize width="140" height="45"/>
+          <minimumSize width="140" height="45"/>
+          <opaque value="true"/>
+          <preferredSize width="140" height="45"/>
+          <text value="LOGOUT"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
