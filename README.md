@@ -83,5 +83,3 @@ The server and all clients must run on the same machine — see below.
 - **The server calls itself over RMI.** `GameServiceImpl` performs a
   `Naming.lookup` to reach the lobby service where a direct reference would do.
   It works, but it is a remote call for no reason.
-- **No tests.** The game rules — captures, home entry, win detection — are pure
-  logic and should have been unit tested.
